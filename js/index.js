@@ -36,6 +36,7 @@ var app = {
         app.receivedEvent('deviceready');
     },
     tokenHandler:function(msg) {
+        alert("Token Handler " + msg);
         console.log("Token Handler " + msg);
     },
     errorHandler:function(error) {
@@ -62,16 +63,21 @@ var app = {
 
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
-
+        
+        alert('Received Event: ' + id);
         console.log('Received Event: ' + id);
     },
     // iOS
     onNotificationAPN: function(event) {
         var pushNotification = window.plugins.pushNotification;
         console.log("Received a notification! " + event.alert);
+        alert("Received a notification! " + event.alert);
         console.log("event sound " + event.sound);
+        alert("event sound " + event.sound)
         console.log("event badge " + event.badge);
+        alert("event badge " + event.badge);
         console.log("event " + event);
+        alert("event " + event);
         if (event.alert) {
             navigator.notification.alert(event.alert);
         }
@@ -95,21 +101,21 @@ var app = {
                     // here is where you might want to send it the regID for later use.
                     alert('registration id = '+e.regid);
                 }
-            break;
+            //break;
 
             case 'message':
               // this is the actual push notification. its format depends on the data model
               // of the intermediary push server which must also be reflected in GCMIntentService.java
               alert('message = '+e.message+' msgcnt = '+e.msgcnt);
-            break;
+           // break;
 
             case 'error':
               alert('GCM error = '+e.msg);
-            break;
+           // break;
 
             default:
               alert('An unknown GCM event has occurred');
-              break;
+             // break;
         }
     }
 

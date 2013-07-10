@@ -3,14 +3,14 @@
         xmlns:gap = 'http://phonegap.com/ns/1.0'
         id        = "com.pushChatNote"
         version   = "0.0.1">
-    <name>Latest Push</name>
+    <name>Push Bibhu</name>
 
     <description>
         Push Plugin Sample for PhoneGap Build
     </description>
 
-    <author href="http://devgirl.org" email="hschinsk@adobe.com">
-        Holly Schinsky
+    <author href="http://sumedhasoftech.com" email="bibhu.sspl@gmail.com">
+       Sumedha Softech
     </author>
 
     <feature name="http://api.phonegap.com/1.0/device" />

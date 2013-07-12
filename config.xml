@@ -3,7 +3,7 @@
         xmlns:gap = 'http://phonegap.com/ns/1.0'
         id        = "com.sumedha.applepush"
         version   = "0.0.1">
-    <name>Push Bibhu</name>
+    <name>Apple Push Notification</name>
 
     <description>
        Apple Push Notification

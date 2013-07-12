@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns     = 'http://www.w3.org/ns/widgets'
         xmlns:gap = 'http://phonegap.com/ns/1.0'
-        id        = "com.sumedha.pushkey"
+        id        = "com.sumedha.applepush"
         version   = "0.0.1">
     <name>Push Bibhu</name>
 
     <description>
-        Push Plugin Sample for PhoneGap Build
+       Apple Push Notification
     </description>
 
     <author href="http://sumedhasoftech.com" email="bibhu.sspl@gmail.com">
